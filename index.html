@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>codejam-canvas</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+
+        <img src="assets/burger.svg" alt="menu">
+        <h1>CodeJam - Pallete</h1>
+
+
+        <img src="assets/ellipsis.svg" alt="options">
+    </header>
+    <main>
+        <div>
+            <div class='tools-block'>
+                <div class='tool' id='fill'>
+                    <img src="assets/bucket.svg" alt="Fill tool">
+                    <span>Paint bucket</span>
+                </div>
+                <div class='separator'></div>
+                <div class='tool' id='eyedropper'>
+                    <img src="assets/eyedropper.svg" alt="Eyedropper tool">
+                    <span>Pick color</span>
+                </div>
+                <div class='separator'></div>
+                <div class='tool' id='pencil'>
+                    <img src="assets/pencil.svg" alt="Pencil tool">
+                    <span>Pencil</span>
+                </div>
+            </div>
+            <div class='tools-block'>
+                <div class='tool' id='cur-color'>
+                    <input type="color" value="#000000" id='input-color'>
+                    <div class='color' id='cur-color-shape'></div>
+                    <span>Color (change)</span>
+                </div>
+                <div class='separator'></div>
+                <div class='tool' id='prev-color'>
+                    <div class='color' id='prev-color-shape'></div>
+                    <span>Prev color</span>
+                </div>
+                <div class='separator'></div>
+                <div class='tool' id='red-color'>
+                    <div class='color' id='red-color-shape'></div>
+                    <span>Red</span>
+                </div>
+                <div class='separator'></div>
+                <div class='tool' id='blue-color'>
+                    <div class='color' id='blue-color-shape'></div>
+                    <span>Blue</span>
+                </div>
+
+            </div>
+        </div>
+        <div class='canvas-box'>
+            <div class="search-container">
+                    <input type="text" placeholder="Enter keywords here.." name="search" class = 'search-bar' id = 'search-bar'>
+                    <button class='load-button' id="load-button">Load image</button>
+                
+            </div>
+            <canvas id='subcanvas' width="512px" height="512px"></canvas>
+            <canvas id='canvas' width="512px" height="512px"></canvas>
+        </div>
+        <div class='tools-block'>
+            <div class='tool switch' id='canvas-128x128'>
+                <span>128x128</span>
+            </div>
+            <div class='separator'></div>
+            <div class='tool switch' id='canvas-256x256'>
+                <span>256x256</span>
+            </div>
+            <div class='separator'></div>
+            <div class='tool switch' id='canvas-512x512'>
+                <span>512x512</span>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
